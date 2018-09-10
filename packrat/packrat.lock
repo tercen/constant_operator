@@ -1,7 +1,7 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.8.52
 RVersion: 3.3.2
-Repos: CRAN=https://cran.rstudio.com
+Repos: CRAN=http://cran.rstudio.com/
 
 Package: BH
 Source: CRAN
@@ -126,13 +126,13 @@ Hash: 49b735b7b1d14f561d21cce12c6703df
 
 Package: rtson
 Source: github
-Version: 1.4.2
-Hash: d5b02b96355a20afd430ab65266110f0
+Version: 1.4.4
+Hash: f41468e22b9401b04bcf834f2f6e8b40
 Requires: R6
 GithubRepo: TSON
 GithubUsername: tercen
-GithubRef: 1.4.2-rtson
-GithubSha1: 29e08ba9da3a2838a73a973404a43f77f9232c3b
+GithubRef: 1.4.4-rtson
+GithubSha1: 01c0ff70ed30b7332f506403713158959492f8ca
 GithubSubdir: rtson
 
 Package: tercen
