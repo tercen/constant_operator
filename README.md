@@ -1,9 +1,33 @@
+# constant operator
 
-```
-https://github.com/tercen/constant_operator.git
-```
+#### Description
+`constant` operator allows for a value equal to a constant to be generated
 
-```R
-packrat::init(options = list(use.cache = TRUE))
-```
+##### Usage
+Input projection|.
+---|---
+`y-axis` | values
+
+Input parameters|.
+---|---
+`constant` | numeric, the constant value to be generated
+
+Output relations|.
+---|---
+`constant`| numeric, log per data point
+
+##### Details
+A `constant` value is generated
+
+
+#### References
+
+##### See Also
+
+#### Examples
+
+
+
+
+ 
  
