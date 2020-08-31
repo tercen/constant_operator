@@ -1,12 +1,22 @@
 library(tercen)
 library(dplyr)
-
+ 
 ctx = tercenCtx()
 
 value = as.double(ctx$op.value('value'))
-cTable = tibble(.ci=seq.int(0,ctx$cschema$nRows-1)) %>% mutate(value=value)
-rTable = tibble(.ri=seq.int(0,ctx$rschema$nRows-1)) %>% mutate(value=value)
 
-cTable %>% full_join(rTable) %>%
-  ctx$addNamespace() %>%
-  ctx$save() 
+table = tercen::dataframe.as.table(ctx$addNamespace(data.frame(value=c(value)))) 
+table$properties$name = 'value'
+table$columns[[1]]$type = 'double'
+
+relation = SimpleRelation$new()
+relation$id = table$properties$name
+
+join = JoinOperator$new()
+join$rightRelation = relation
+
+result = OperatorResult$new()
+result$tables = list(table)
+result$joinOperators = list(join)
+
+ctx$save(result) 
