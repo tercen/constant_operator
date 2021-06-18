@@ -1,6 +1,6 @@
 {
   "name": "Constant",
-  "description": "Define a constant value per cell",
+  "description": "Define a cell to have a constant value.",
   "tags": ["basic statistics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/constant_operator"],
