@@ -1,6 +1,6 @@
 {
   "name": "Constant",
-  "description": "Define a cell to have a constant value.",
+  "description": "Generates an arbitrary constant.",
   "tags": [
     "arithmetic"
   ],
