@@ -28,6 +28,32 @@
         "metaFactors": [],
         "axis": []
       }
+    ],
+    "outputSpecsV2": [
+      {
+        "kind": "OperatorJoinSpec",
+        "joinOperators": [
+          {
+            "kind": "JoinOperator",
+            "joinType": "left",
+            "leftPair": {
+              "kind": "ColumnPair",
+              "lColumns": [],
+              "rColumns": []
+            },
+            "rightRelation": {
+              "kind": "TableRelation",
+              "attributes": [
+                {
+                  "kind": "Attribute",
+                  "name": "value",
+                  "type": "double"
+                }
+              ]
+            }
+          }
+        ]
+      }
     ]
   }
 }
